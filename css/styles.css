@@ -168,7 +168,9 @@ img {
 
 .hero__img {
      position: absolute;
-     right: -116px;
+     width: 728px;
+     height: 900px;
+     left: calc(50% + 80px);
      top: -120px;
 }
 
@@ -205,6 +207,7 @@ img {
 .features__list {
      display: flex;
      align-items: center;
+     flex-wrap: wrap;
      padding: 0;
      margin: 0;
      list-style: none;
@@ -264,9 +267,10 @@ img {
      margin-bottom: 40px;
 }
 
-.articles__list {
+.articles__grid-list {
      display: flex;
      align-items: center;
+     flex-wrap: wrap;
      padding: 0;
      margin: 0;
      list-style: none;
@@ -317,9 +321,99 @@ img {
      color: #2ab6d9;
 }
 
+.articles__link:active {
+     opacity: 0.6;
+}
+
 .articles__text {
      color: var(--color-accent);
      font-size: 13px;
      line-height: 18px; 
      letter-spacing: -0.203px;
+}
+
+/* FOOTER */
+.footer {
+     background-color: var(--color-title);
+     padding-top: 48px;
+     padding-bottom: 48px;
+}
+
+.footer__conatainer {
+     display: flex;
+}
+
+.footer__inner {
+     margin-right: 135px;
+}
+
+.footer__logo {
+     display: flex;
+     margin-bottom: 55px;
+     display: block;
+}
+
+.footer__list-icons {
+     display: flex;
+     align-items: center;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+
+.footer__item-icons:not(:last-child) {
+     margin-right: 14px;
+}
+
+.footer__list {
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     padding: 0;
+     margin: 0;
+     list-style: none;
+}
+
+.footer__list:not(:last-child) {
+     margin-right: 30px;
+}
+
+.footer__link {
+     display: block;
+     width: 160px;
+     text-decoration: none;
+     color: var(--color-white);
+     font-size: 15px;
+     line-height: 26px; 
+     letter-spacing: -0.234px;
+}
+
+.footer__link:hover {
+     color: #2AB6D9;
+}
+
+.footer__icon {
+     display: block;
+}
+
+.footer__button-wrapper {
+     display: flex;
+     align-items: flex-end;
+     justify-content: space-between;
+     flex-direction: column;
+     text-align: right;
+     margin-left: auto;
+}
+
+.footer__button {
+     margin-bottom: 24px;
+}
+
+.footer__info {
+     text-decoration: none;
+     color: rgba(255, 255, 255 , 0.5);
+     text-align: right;
+     font-size: 15px;
+     line-height: 26px;
+     letter-spacing: -0.234px;
 }
